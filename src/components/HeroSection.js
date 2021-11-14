@@ -63,6 +63,89 @@ const HeroStyles = styled.div`
     p {
       font-size: 1.6rem;
       transform: translateY(-70px) rotate(90deg);
+      letter-spacing: 0.7rem;
+      text-transform: uppercase;
+    }
+    img {
+      max-height: 45px;
+      width: 16px;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+
+    .hero__scrollDown {
+      img {
+        max-height: 70px;
+      }
+    }
+  }
+  .hero__social__text {
+    ul {
+      li {
+        margin-bottom: 1rem;
+      }
+      a {
+        display: inline-block;
+        font-size: 1.6rem;
+        transform: rotate(-90deg);
+        letter-spacing: 5px;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .hero {
+      min-height: 750px;
+    }
+    .hero__heading {
+      font-size: 1.4rem;
+      margin-bottom: -3rem;
+      .hero__name {
+        font-size: 4.5rem;
+      }
+    }
+
+    .hero__img {
+      height: 300px;
+    }
+
+    .hero__info {
+      margin-top: 3rem;
+    }
+
+    .hero__social {
+      left: 0px;
+      bottom: 15%;
+      width: 20px;
+      .hero__social__indicator {
+        width: 20px;
+        p {
+          font-size: 1.2rem;
+        }
+        img {
+          max-height: 22px;
+        }
+      }
+      .hero__social__text {
+        ul {
+          li {
+            a {
+              font-size: 1.2rem;
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .hero__scrollDown {
+      right: 0;
+      width: 20px;
+      gap: 1rem;
+      p {
+        font-size: 1.3rem;
+      }
     }
   }
 `;
@@ -98,7 +181,7 @@ export default function HeroSection() {
               <p>Follow</p>
               <img src={SocialMediaArrow} alt="" />
             </div>
-            <div className="hero_scoial_text">
+            <div className="hero__social__text">
               <ul>
                 <li>
                   <a
@@ -111,7 +194,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="http://facebook.com/at.the.edge.of.insanity"
+                    href="https://www.instagram.com/dibya.rb/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -120,7 +203,7 @@ export default function HeroSection() {
                 </li>
                 <li>
                   <a
-                    href="http://facebook.com/at.the.edge.of.insanity"
+                    href="https://www.linkedin.com/in/dibya-ranjan-bhoi/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -142,7 +225,7 @@ export default function HeroSection() {
 
           <div className="hero__scrollDown">
             <p>Scroll</p>
-            {/* <img src={ScrollDownArrow} alt="" /> */}
+            <img src={ScrollDownArrow} alt="" />
           </div>
         </div>
       </div>
