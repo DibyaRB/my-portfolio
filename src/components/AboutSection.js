@@ -35,10 +35,10 @@ const AboutSectionStyle = styled.div`
   }
 
   @media only screen and (max-width: 950px) {
-    .aboutsection__left: {
+    .aboutsection__left {
       flex: 4;
     }
-    .aboutsection__right: {
+    .aboutsection__right {
       flex: 3;
     }
   }
