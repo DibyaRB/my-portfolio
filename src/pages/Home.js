@@ -4,7 +4,6 @@ import AboutSection from '../components/AboutSection';
 import ServiceSection from '../components/ServiceSection';
 import ProjectSection from '../components/ProjectSection';
 import ContactBanner from '../components/ContactBanner';
-import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -14,7 +13,6 @@ export default function Home() {
       <ServiceSection />
       <ProjectSection />
       <ContactBanner />
-      <Footer />
     </div>
   );
 }
