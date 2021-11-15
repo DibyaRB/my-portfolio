@@ -172,6 +172,17 @@ const NavMenu = () => {
             Contact
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/Dibya-Ranjan-Bhoi-Resume.pdf"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Resume
+          </NavLink>
+        </li>
       </ul>
     </NavMenuStyles>
   );
