@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
         <div className="footer__col2">
           <FooterColumn
-            heading="Important Links"
+            heading="Links"
             links={[
               {
                 title: 'Home',
@@ -90,7 +90,7 @@ export default function Footer() {
         </div>
         <div className="footer__col3">
           <FooterColumn
-            heading="Contact Info"
+            heading="Contact"
             links={[
               {
                 title: '+91 80939 97289',

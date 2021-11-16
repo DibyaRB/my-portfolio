@@ -28,11 +28,27 @@ const ContactSectionStyle = styled.div`
 
   .left {
     width: 100%;
-    max-width: 40%;
+    max-width: 500px;
   }
   .right {
     width: 100%;
-    max-width: 40%;
+    max-width: 500px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .contactSection__wrapper {
+      flex-direction: column;
+    }
+    .contactSection__wrapper::after {
+      display: none;
+    }
+    .left,
+    .right {
+      max-width: 100%;
+    }
+    .right {
+      padding: 4rem 2rem 2rem 2rem;
+    }
   }
 `;
 
