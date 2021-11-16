@@ -8,36 +8,33 @@ import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
-import SmoothScrollbar from './components/SmoothScrollbar';
 
 export default function App() {
   return (
     <Router>
       <NavMenu />
-      <SmoothScrollbar>
-        {/* <ScrollToTop /> */}
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
+      <ScrollToTop />
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
 
-          <Route path="/projects">
-            <Projects />
-          </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
 
-          <Route path="/contact">
-            <Contact />
-          </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
 
-          <Route path="/blog">
-            <Blog />
-          </Route>
+        <Route path="/blog">
+          <Blog />
+        </Route>
 
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </SmoothScrollbar>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
       <Footer />
     </Router>
   );
