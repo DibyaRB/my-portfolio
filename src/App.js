@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
+import Blog from './pages/Blog';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -26,7 +27,7 @@ export default function App() {
         </Route>
 
         <Route path="/blog">
-          <Contact />
+          <Blog />
         </Route>
 
         <Route path="/">
