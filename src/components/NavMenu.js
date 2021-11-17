@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdMenu, MdClose } from 'react-icons/md';
+import ResumePDF from '../assets/data/Dibya-Ranjan-Bhoi-Resume.pdf';
 
 const NavMenuStyles = styled.div`
   position: fixed;
@@ -173,15 +174,9 @@ const NavMenu = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="/Dibya-Ranjan-Bhoi-Resume.pdf"
-            onClick={() => setShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}
-          >
+          <a href={ResumePDF} target="_blank" rel="noreferrer">
             Resume
-          </NavLink>
+          </a>
         </li>
       </ul>
     </NavMenuStyles>

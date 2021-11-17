@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import Button from '../components/Button';
+// import Button from '../components/Button';
 import AboutImg from '../assets/images/about-page-img.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
+import ResumePDF from '../assets/data/Dibya-Ranjan-Bhoi-Resume.pdf';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -54,6 +55,15 @@ const AboutPageStyles = styled.div`
     font-size: 3.6rem;
     text-transform: uppercase;
   }
+  .ResumeButton {
+    font-size: 2.2.rem;
+    background-color: var(--deep-dark);
+    padding: 0.7em 2em;
+    border-radius: 8px;
+    display: inline-block;
+    border: 2px solid var(--gray-1);
+    color: black !important;
+  }
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
     .top_section {
@@ -100,7 +110,13 @@ export default function About() {
                 create beautiful things so that the world can be a better place.
               </PText>
             </div>
-            <Button btnText="Resume" btnLink="/Dibya-Ranjan-Bhoi-Resume.pdf" />
+
+            <div className="ResumeButton">
+              <a href={ResumePDF} target="_blank" rel="noreferrer">
+                Resume
+              </a>
+            </div>
+            {/* <Button btnText="Resume" btnLink={ResumePDF} /> */}
           </div>
           <div className="right">
             <img src={AboutImg} alt="dibyaimg" />
